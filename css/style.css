@@ -354,25 +354,30 @@
 
         /* Mobile Menu */
         .mobile-menu {
-            display: none;
+            display: flex;
+            flex-direction: column;
             position: fixed;
-            top: 75px;
+            top: 72px; /* Match header height */
             left: 0;
             right: 0;
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-            padding: 16px 24px 24px;
-            box-shadow: var(--shadow-lg);
+            bottom: 0;
+            height: calc(100vh - 72px);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 24px;
             z-index: 999;
-            transform: translateY(-10px);
+            transform: translateX(100%);
             opacity: 0;
-            transition: all 0.35s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+            pointer-events: none;
         }
 
         .mobile-menu.open {
-            display: block;
-            transform: translateY(0);
+            transform: translateX(0);
             opacity: 1;
+            pointer-events: auto;
         }
 
         .mobile-menu .nav-link {
@@ -1516,8 +1521,23 @@
             .nav-links, .nav-cta { display: none; }
             .hamburger { display: flex; }
 
-            .hero-content { padding: 100px 0 60px; }
-            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            .hero-content { 
+                padding: 120px 0 60px; 
+                text-align: center;
+                margin: 0 auto;
+            }
+            .hero-badge { margin-bottom: 20px; }
+            .hero-desc { margin: 0 auto 32px; }
+            .hero-buttons { 
+                justify-content: center; 
+                gap: 12px;
+            }
+            .hero-stats { 
+                gap: 20px; 
+                flex-wrap: wrap; 
+                justify-content: center;
+                margin-top: 48px;
+            }
             .hero-decor { display: none; }
 
             .features-grid {
@@ -1606,14 +1626,19 @@
 
         @media (max-width: 480px) {
             .container {
-                padding: 0 16px;
+                padding: 0 20px;
             }
             .hero-buttons {
                 flex-direction: column;
+                width: 100%;
             }
             .hero-buttons .btn {
                 width: 100%;
             }
+            .hero-stat-value { font-size: 1.5rem; }
+            .section-header { margin-bottom: 40px; }
+            .section { padding: 48px 0; }
+            .stat-value { font-size: 2.25rem; }
             .cert-grid {
                 grid-template-columns: 1fr;
             }
