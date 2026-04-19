@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorized Distributors — National PVC Pipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .dist-table-container {
+            width: 100%;
+            overflow-x: auto;
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th {
+            padding: 15px;
+            border-bottom: 2px solid var(--border);
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover td {
+            background: rgba(var(--primary-rgb), 0.02);
+            color: var(--text);
+        }
+        .dist-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: rgba(var(--primary-rgb), 0.1);
+            color: var(--primary);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-accent"></div>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="National PVC"></a>
+
+                <div class="nav-links" id="navLinks">
+                    <a class="nav-link" href="index.html">Home</a>
+                    
+                    <div class="nav-item">
+                        <a class="nav-link has-dropdown" href="about.html">
+                            Company
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-link" href="about.html">About Us</a>
+                            <a class="dropdown-link" href="careers.html">Careers</a>
+                            <a class="dropdown-link" href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item">
+                        <a class="nav-link has-dropdown" href="products.html">
+                            Products
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-link" href="products.html">Product Range</a>
+                            <a class="dropdown-link" href="shop.html">Shop / Catalog</a>
+                            <a class="dropdown-link" href="projects.html">Projects Portfolio</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" href="distributors.html">Distributors</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+
+                <a class="btn btn-primary btn-sm nav-cta" href="contact.html">
+                    Get Quote
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+
+                <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link" href="shop.html">Shop</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="distributors.html">Distributors</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="careers.html">Careers</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="btn btn-primary btn-sm" href="contact.html" style="margin-top:8px;">Get Quote</a>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main>
+        <section class="page-header" style="background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('assets/background/distributors-header.png') center/cover no-repeat;">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span class="current">Distributors</span>
+                </div>
+                <h1>Our Distribution Network</h1>
+                <p>Find an authorized National PVC dealer near you in our extensive island-wide network.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Dealer Locator</span>
+                    <h2 class="section-title">Authorized Island-Wide Distributors</h2>
+                </div>
+
+                <div class="dist-table-container fade-in-up">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Region / District</th>
+                                <th>Authorized Dealer</th>
+                                <th>Contact Information</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Colombo</strong></td>
+                                <td>Nawala Main Center</td>
+                                <td>+94 11 280 6230</td>
+                                <td><span class="dist-badge">Main Center</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Anuradhapura</strong></td>
+                                <td>North Central Trading</td>
+                                <td>+94 25 222 1456</td>
+                                <td><span class="dist-badge">Distributor</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Galle</strong></td>
+                                <td>Southern Pipe House</td>
+                                <td>+94 91 123 4567</td>
+                                <td><span class="dist-badge">Distributor</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kandy</strong></td>
+                                <td>Central Region Dealers</td>
+                                <td>+94 81 222 3456</td>
+                                <td><span class="dist-badge">Distributor</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jaffna</strong></td>
+                                <td>Northern Infrastructure Supplies</td>
+                                <td>+94 21 222 7890</td>
+                                <td><span class="dist-badge">Regional Partner</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ampara</strong></td>
+                                <td>Eastern Water Solutions</td>
+                                <td>+94 63 222 3344</td>
+                                <td><span class="dist-badge">Distributor</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Matara</strong></td>
+                                <td>Deep South Pipe Mart</td>
+                                <td>+94 41 222 1122</td>
+                                <td><span class="dist-badge">Distributor</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ratnapura</strong></td>
+                                <td>Gem City Plumbing</td>
+                                <td>+94 45 222 3344</td>
+                                <td><span class="dist-badge">Distributor</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--surface);">
+            <div class="container" style="max-width: 800px; text-align: center;">
+                <h2 class="section-title">Interested in becoming a Distributor?</h2>
+                <p style="color: var(--text-light); margin-bottom: 30px;">Join our growing network and partner with the region's top piping brand.</p>
+                <a href="contact.html" class="btn btn-primary">Apply Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                    <div class="logo">
+                        <img src="assets/logo.jpg" alt="National PVC" style="height: 40px;">
+                    </div>
+                    <p>Premium quality PVC pipes and fittings manufacturer since 1985. A member of the Central Finance Group.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="distributors.html">Distributors</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">uPVC Pipes</a></li>
+                        <li><a href="products.html">CPVC Pipes</a></li>
+                        <li><a href="products.html">HDPE Pipes</a></li>
+                        <li><a href="products.html">Rainwater Gutters</a></li>
+                        <li><a href="products.html">Water Tanks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p>No. 311, Nawala Road, Rajagiriya, Sri Lanka.</p>
+                    <p>Phone: +94 11 280 6230</p>
+                    <p>Email: info@nationalpvc.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 National PVC Pipe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details — National PVC Pipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .product-gallery {
+            position: sticky;
+            top: 100px;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--surface);
+        }
+        .product-main-img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+        }
+        .product-detail-info h1 {
+            margin-bottom: 15px;
+            font-size: 2.5rem;
+        }
+        .product-detail-info .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary-dark);
+            margin-bottom: 24px;
+            display: block;
+        }
+        .short-desc {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+            border-left: 4px solid var(--secondary);
+            padding-left: 20px;
+        }
+
+        /* Tabs System */
+        .tabs-header {
+            display: flex;
+            gap: 32px;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        .tab-btn {
+            padding: 12px 0;
+            font-weight: 700;
+            color: var(--text-light);
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .tab-btn.active {
+            color: var(--primary);
+        }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--secondary);
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .specs-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .spec-item {
+            padding: 15px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+        }
+        .spec-item strong {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-lighter);
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 968px) {
+            .product-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .product-gallery { position: static; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-accent"></div>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="National PVC"></a>
+
+                <div class="nav-links" id="navLinks">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <div class="nav-item">
+                        <a class="nav-link has-dropdown" href="about.html">Company <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-link" href="about.html">About Us</a>
+                            <a class="dropdown-link" href="careers.html">Careers</a>
+                            <a class="dropdown-link" href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link has-dropdown active" href="products.html">Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-link" href="products.html">Product Range</a>
+                            <a class="dropdown-link" href="shop.html">Shop / Catalog</a>
+                            <a class="dropdown-link" href="projects.html">Projects Portfolio</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="distributors.html">Distributors</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+
+                <a class="btn btn-primary btn-sm nav-cta" href="contact.html">
+                    Get Quote <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+
+                <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main>
+        <section class="section" style="padding-top: 140px;">
+            <div class="container" id="productDetailContainer">
+                <!-- Data will be loaded here -->
+                <div style="text-align: center; padding: 100px 0;">
+                    <p>Loading product details...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products Placeholder -->
+        <section class="section" style="background: var(--surface);">
+            <div class="container">
+                <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+                    <h2 class="section-title">Related Products</h2>
+                </div>
+                <div class="product-grid" id="relatedProductsGrid">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="assets/logo.jpg" alt="National PVC" style="height: 40px;">
+                    </div>
+                    <p>Premium quality PVC pipes and fittings manufacturer since 1985. A member of the Central Finance Group.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="distributors.html">Distributors</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p>No. 311, Nawala Road, Rajagiriya, Sri Lanka.</p>
+                    <p>Phone: +94 11 280 6230</p>
+                    <p>Email: info@nationalpvc.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 National PVC Pipe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Specific init for product detail if needed
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadProductDetails === 'function') {
+                loadProductDetails();
+            }
+        });
+    </script>
+</body>
+</html>

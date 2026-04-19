@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National PVC Pipe — Building the Region's Infrastructure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-accent"></div>
+        <div class="container">
+            <nav class="navbar">
+                <a class="logo" href="index.html"><img src="assets/logo.jpg" alt="National PVC"></a>
+
+                <div class="nav-links" id="navLinks">
+                    <a class="nav-link" href="index.html">Home</a>
+                    
+                    <div class="nav-item">
+                        <a class="nav-link has-dropdown" href="about.html">
+                            Company
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-link" href="about.html">About Us</a>
+                            <a class="dropdown-link" href="careers.html">Careers</a>
+                            <a class="dropdown-link" href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item">
+                        <a class="nav-link has-dropdown" href="products.html">
+                            Products
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-link" href="products.html">Product Range</a>
+                            <a class="dropdown-link" href="shop.html">Shop / Catalog</a>
+                            <a class="dropdown-link" href="projects.html">Projects Portfolio</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-link" href="distributors.html">Distributors</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+
+                <a class="btn btn-primary btn-sm nav-cta" href="contact.html">
+                    Get Quote
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+
+                <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link" href="shop.html">Shop</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="distributors.html">Distributors</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="careers.html">Careers</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="btn btn-primary btn-sm" href="contact.html" style="margin-top:8px;">Get Quote</a>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main>
+
+        <!-- ========== HOME PAGE ========== -->
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-bg"></div>
+                <div class="hero-overlay"></div>
+                <div class="hero-decor"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot"></span>
+                            the Region's Trusted PVC Manufacturer
+                        </div>
+                        <h1>Building the Region's <span class="highlight">Infrastructure</span> With Strength</h1>
+                        <p class="hero-desc">Premium quality PVC pipes and fittings engineered for durability, safety, and performance. Serving industries, builders, and homes across the nation for over 25 years.</p>
+                        <div class="hero-buttons">
+                            <a class="btn btn-primary" onclick="navigateTo('products')">
+                                Explore Products
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a class="btn btn-outline" onclick="navigateTo('contact')">Contact Us</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div>
+                                <div class="hero-stat-value">25+</div>
+                                <div class="hero-stat-label">Years Experience</div>
+                            </div>
+                            <div>
+                                <div class="hero-stat-value">1000+</div>
+                                <div class="hero-stat-label">Projects Delivered</div>
+                            </div>
+                            <div>
+                                <div class="hero-stat-value">500+</div>
+                                <div class="hero-stat-label">Distributors</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Grid -->
+            <section class="section" style="background: var(--surface);">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-label">Why Choose Us</span>
+                        <h2 class="section-title">The National PVC Advantage</h2>
+                        <p class="section-desc centered">We combine cutting-edge manufacturing with decades of expertise to deliver products that exceed industry standards.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card fade-in-up">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+                            </div>
+                            <h4>Superior Quality</h4>
+                            <p>ISO 9001:2015 certified manufacturing with rigorous quality checks at every stage of production.</p>
+                        </div>
+                        <div class="feature-card fade-in-up delay-1">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                            </div>
+                            <h4>Wide Range</h4>
+                            <p>Comprehensive catalog of UPVC, CPVC, SWR pipes and fittings for every application need.</p>
+                        </div>
+                        <div class="feature-card fade-in-up delay-2">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            </div>
+                            <h4>Expert Support</h4>
+                            <p>Dedicated technical team providing consultation, installation guidance, and after-sales support.</p>
+                        </div>
+                        <div class="feature-card fade-in-up delay-3">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                            </div>
+                            <h4>Fast Delivery</h4>
+                            <p>Nationwide distribution network ensuring timely delivery to your project site across the region.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Categories -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-label">Our Products</span>
+                        <h2 class="section-title">Popular Categories</h2>
+                        <p class="section-desc centered">Explore our range of PVC pipes and fittings designed for diverse applications.</p>
+                    </div>
+                    <div class="categories-grid">
+                        <div class="category-card fade-in-up" onclick="navigateTo('products')">
+                            <img src="assets/products/upvc-pipe.png" alt="UPVC Pipes">
+                            <div class="category-overlay">
+                                <h3>UPVC Pipes</h3>
+                                <p>Cold water plumbing & distribution</p>
+                            </div>
+                            <div class="category-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                        <div class="category-card fade-in-up delay-1" onclick="navigateTo('products')">
+                            <img src="assets/products/upvc-fitting.png" alt="CPVC Pipes">
+                            <div class="category-overlay">
+                                <h3>CPVC Pipes</h3>
+                                <p>Hot & cold water plumbing systems</p>
+                            </div>
+                            <div class="category-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                        <div class="category-card fade-in-up delay-2" onclick="navigateTo('products')">
+                            <img src="assets/products/rainwater-system.png" alt="SWR Pipes">
+                            <div class="category-overlay">
+                                <h3>SWR Pipes</h3>
+                                <p>Drainage & waste management</p>
+                            </div>
+                            <div class="category-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Counter Section -->
+            <section class="section stats-section" id="statsSection">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-label" style="color: var(--secondary-light);">Our Impact</span>
+                        <h2 class="section-title" style="color: var(--text-inverse);">Numbers That Speak</h2>
+                        <p class="section-desc centered" style="color: var(--text-lighter);">Over two decades of trusted service to the Region's construction and infrastructure sectors.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item fade-in-up">
+                            <div class="stat-value" data-target="25" data-suffix="+">0</div>
+                            <div class="stat-label">Years of Excellence</div>
+                            <div class="stat-divider"></div>
+                        </div>
+                        <div class="stat-item fade-in-up delay-1">
+                            <div class="stat-value" data-target="1000" data-suffix="+">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                            <div class="stat-divider"></div>
+                        </div>
+                        <div class="stat-item fade-in-up delay-2">
+                            <div class="stat-value" data-target="500" data-suffix="+">0</div>
+                            <div class="stat-label">Distributors Nationwide</div>
+                            <div class="stat-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: About -->
+                <div class="footer-about">
+                    <div class="logo"><img src="assets/logo.jpg" alt="National PVC" style="height: 40px;"></div>
+                    <p>Premium quality PVC pipes and fittings manufacturer. Trusted by builders, plumbers, and infrastructure developers since 1985. A member of the Central Finance Group..</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="distributors.html">Distributors</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Products -->
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">UPVC Pipes</a></li>
+                        <li><a href="products.html">CPVC Pipes</a></li>
+                        <li><a href="products.html">SWR Pipes</a></li>
+                        <li><a href="products.html">Garden Hoses</a></li>
+                        <li><a href="products.html">Pipe Fittings</a></li>
+                        <li><a href="products.html">Column Pipes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <p>No. 311, Nawala Road, Rajagiriya, Sri Lanka.</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <p>+94 11 280 6230</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <p>info@nationalpvc.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 National PVC Pipe. All rights reserved.</p>
+                <p>
+                    <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
